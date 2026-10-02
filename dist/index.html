@@ -37,8 +37,7 @@
             </figure>
         </header>
 
-        <form id="formviagem" name="formviagem" method="get" action=""
-        class="mb-10 mt-5">
+        <form id="formviagem" name="formviagem" method="get" action="" class="mb-10 mt-5">
 
             <p class="mb-5 font-medium text-cyan-300 text-center text-balance 
             lg:text-left">
@@ -49,20 +48,107 @@
                 <legend class="px-2 font-title text-lg font-bold text-cyan-300">
                     01. Dados do viajante
                 </legend>
-                <div class="">
+
+                <section class="grid gap-6 md:grid-cols-2">
                     <!-- Nome -->
                     <div>
-                        <label for="nome">Nome Completo</label>
+                        <label for="nome" class="block ml-2  my-1 text-sm text-slate-300">Nome Completo
+                        </label>
                         <input type="text" id="nome" name="nome" placeholder="Digite seu nome" minlength="10" max="15"
-                            required>
+                            required class="border w-full border-white/10 bg-slate-950/60
+                        px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                        focus:bg-white/10">
+
+
                     </div>
 
-                    <button type="submit">Reservar viagem</button>
-                    <button type="reset">Limpar dados</button>
-                </div>
+                    <div>
+                        <label for="codigo" class="block ml-2  my-1 text-sm text-slate-300">
+                            Código de Acesso
+                        </label>
+                        <input type="password" id="codigo" name="codigo" placeholder="Digite seu código" minlength="10"
+                            max="15" required class="border w-full border-white/10 bg-slate-950/60
+                                            px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                                            focus:bg-white/10">
+                    </div>
+
+                    <div>
+                        <label for="data" class="block ml-2  my-1 text-sm text-slate-300">
+                            Data da viagem
+                        </label>
+                        <input type="date" id="data" name="data" required class="border w-full border-white/10 bg-slate-950/60
+                                                            px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                                                             focus:bg-white/10">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block ml-2  my-1 text-sm text-slate-300">
+                            E-mail
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required class="border w-full border-white/10 bg-slate-950/60
+                                            px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                                            focus:bg-white/10">
+
+
+                    </div>
+
+                </section>
             </fieldset>
 
 
+            <fieldset class="border-2 border-white/10 bg-wite/5 p-4 rounded-2xl my-8">
+                <legend class="px-2 font-title text-lg font-bold text-cyan-300">
+                    02. Detalhes da Viage
+                </legend>
+            
+                <section class="grid gap-6 md:grid-cols-2">
+                    <div>
+                        <label for="destino" class="block ml-2  my-1 text-sm text-slate-300">
+                            Destino
+                        </label>
+                        <select name="destino" id="destino" required 
+                        class="w-full border-white/10 bg-slate-950
+                        rounded-lg px-4 py-3 outline-none focus:border-cyan-400">
+                            <option value="0" disabled selected>Selecione um destino</option>
+                            <option value="Lua">Lua</option>
+                            <option value="Marte">Marte</option>
+                            <option value="Orion">Orion</option>
+                            <option value="Titan">Titan</option>
+                        </select>
+                    </div>
+            
+                    <div>
+                        <label for="codigo" class="block ml-2  my-1 text-sm text-slate-300">
+                            Código de Acesso
+                        </label>
+                        <input type="password" id="codigo" name="codigo" placeholder="Digite seu código" minlength="10" max="15"
+                            required class="border w-full border-white/10 bg-slate-950/60
+                                                        px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                                                        focus:bg-white/10">
+                    </div>
+            
+                    <div>
+                        <label for="data" class="block ml-2  my-1 text-sm text-slate-300">
+                            Data da viagem
+                        </label>
+                        <input type="date" id="data" name="data" required class="border w-full border-white/10 bg-slate-950/60
+                                                                        px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                                                                         focus:bg-white/10">
+                    </div>
+            
+                    <div>
+                        <label for="email" class="block ml-2  my-1 text-sm text-slate-300">
+                            E-mail
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required class="border w-full border-white/10 bg-slate-950/60
+                                                        px-4 py-3 rounded-lg outline-none focus:border-cyan-400
+                                                        focus:bg-white/10">
+            
+            
+                    </div>
+            
+                </section>
+            </fieldset>
         </form>
 
 
